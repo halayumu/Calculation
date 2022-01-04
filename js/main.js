@@ -21,5 +21,11 @@ new Vue({
         threeAnswer: function() { return this.three * 100 }, //百円の計算
         twoAnswer: function() { return this.two * 50 }, //五十円の計算
         oneAnswer: function() { return this.one * 10 }, //五十円の計算
+
+        //----[合計処理]----//
+        total: function() {
+            return this.sevenAnswer + this.sixAnswer + this.fiveAnswer + this.fourAnswer +
+                this.threeAnswer + this.twoAnswer + this.oneAnswer
+        }
     }
 })
