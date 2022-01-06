@@ -11,3 +11,7 @@
     content: "\A";
     white-space: pre;
 }
+
+.red {
+    color: red;
+}
