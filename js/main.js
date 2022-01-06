@@ -9,7 +9,7 @@ new Vue({
         four: "", //五百円
         three: "", //百円
         two: "", //五十円
-        one: "" //十円
+        one: "", //十円
     },
 
     //----[演算処理]----//
@@ -26,6 +26,15 @@ new Vue({
         total: function() {
             return this.sevenAnswer + this.sixAnswer + this.fiveAnswer + this.fourAnswer +
                 this.threeAnswer + this.twoAnswer + this.oneAnswer
+        },
+    },
+
+    //----[css判定]----//
+    methods: {
+        totalColor(total) {
+            if (total == 60000) {
+                return "red"; //クラス名
+            }
         }
     }
 })
