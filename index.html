@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>バイト計算機</title>
 </head>
 
@@ -18,7 +18,7 @@
         <p>100*</p><input type="text" v-model="three">{{ threeAnswer }}円<br>
         <p>50*</p><input type="text" v-model="two">{{ twoAnswer }}円<br>
         <p>10*</p><input type="text" v-model="one">{{ oneAnswer }}円<br>
-        <p>合計金額 {{ total }}円</p>
+        <p>合計金額<span :class="totalColor(total)"> {{ total }}円</span></p>
     </div>
 
     <!-- [js読み込み] -->
