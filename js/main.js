@@ -14,13 +14,62 @@ new Vue({
 
     //----[演算処理]----//
     computed: {
-        sevenAnswer: function() { return this.seven * 10000 }, //一万の計算
-        sixAnswer: function() { return this.six * 5000 }, //五千円の計算
-        fiveAnswer: function() { return this.five * 1000 }, //千円の計算
-        fourAnswer: function() { return this.four * 500 }, //五百円の計算
-        threeAnswer: function() { return this.three * 100 }, //百円の計算
-        twoAnswer: function() { return this.two * 50 }, //五十円の計算
-        oneAnswer: function() { return this.one * 10 }, //五十円の計算
+        sevenAnswer: function() { //一万の計算
+            if (isNaN(this.seven)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.seven * 10000
+            }
+        },
+        sixAnswer: function() { //五千円の計算
+            if (isNaN(this.six)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.six * 5000
+            }
+        },
+        fiveAnswer: function() { //千円の計算
+            if (isNaN(this.five)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.five * 1000
+            }
+        },
+        fourAnswer: function() { //五百円の計算
+            if (isNaN(this.four)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.four * 500
+            }
+        },
+        threeAnswer: function() { //百円の計算
+            if (isNaN(this.three)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.three * 100
+            }
+        },
+        twoAnswer: function() { //五十円の計算
+            if (isNaN(this.two)) {
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.two * 50
+            }
+        },
+        oneAnswer: function() {
+            if (isNaN(this.one)) { //五十円の計算
+                alert('数値を入力してください');
+                return 0
+            } else {
+                return this.one * 10
+            }
+        },
 
         //----[合計処理]----//
         total: function() {
@@ -31,8 +80,8 @@ new Vue({
 
     //----[css判定]----//
     methods: {
-        totalColor(total) {
-            if (total == 60000) {
+        totalColor(totals) {
+            if (totals == 60000) {
                 return "red"; //クラス名
             }
         }
