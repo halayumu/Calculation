@@ -10,17 +10,22 @@
 </head>
 
 <body>
-    <h1>レジ金計算機</h1>
+    <header>
+        <h1>レジ金計算機</h1>
+    </header>
     <div id="app">
-        <p>10000*</p><input id="txt" type="text" v-model="seven">{{ sevenAnswer }}円<br>
-        <p>5000*</p><input type="text" v-model="six">{{ sixAnswer }}円<br>
-        <p>1000*</p><input type="text" v-model="five">{{ fiveAnswer }}円<br>
-        <p>500*</p><input type="text" v-model="four">{{ fourAnswer }}円<br>
-        <p>100*</p><input type="text" v-model="three">{{ threeAnswer }}円<br>
-        <p>50*</p><input type="text" v-model="two">{{ twoAnswer }}円<br>
-        <p>10*</p><input type="text" v-model="one">{{ oneAnswer }}円<br>
-        <p>合計金額<span :class="totalColor(total)"> {{ total }}円</span></p>
+        <main>
+            <p>10000*</p><input id="txt" type="text" v-model="seven">{{ sevenAnswer }}円<br>
+            <p>5000*</p><input type="text" v-model="six">{{ sixAnswer }}円<br>
+            <p>1000*</p><input type="text" v-model="five">{{ fiveAnswer }}円<br>
+            <p>500*</p><input type="text" v-model="four">{{ fourAnswer }}円<br>
+            <p>100*</p><input type="text" v-model="three">{{ threeAnswer }}円<br>
+            <p>50*</p><input type="text" v-model="two">{{ twoAnswer }}円<br>
+            <p>10*</p><input type="text" v-model="one">{{ oneAnswer }}円<br>
+            <p>合計金額<span :class="totalColor(total)"> {{ total }}円</span></p>
+        </main>
     </div>
+    <video src="./video/top.mp4" muted autoplay playsinline loop></video>
 
     <!-- [js読み込み] -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
