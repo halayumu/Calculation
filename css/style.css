@@ -6,6 +6,11 @@
     header h1 {
         font-weight: normal;
         margin-bottom: 30px;
+        border-bottom: solid 2px #555;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 10px;
+        margin-bottom: 30px;
     }
     
     .br {
@@ -19,6 +24,7 @@
     
     .red {
         color: red;
+        font-size: 30px;
     }
     
     body {
@@ -26,5 +32,5 @@
     }
     
     input {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
