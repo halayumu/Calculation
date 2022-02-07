@@ -11,10 +11,10 @@
 
 <body>
     <div id="box">
-        <header>
-            <h1>レジ金計算機</h1>
-        </header>
         <div id="app">
+            <header>
+                <h1>{{ heading }}</h1>
+            </header>
             <main>
                 <p>10000*</p><input id="txt" type="text" v-model="seven">枚{{ sevenAnswer }}円<br>
                 <p>5000*</p><input type="text" v-model="six">枚{{ sixAnswer }}円<br>
@@ -23,7 +23,7 @@
                 <p>100*</p><input type="text" v-model="three">枚{{ threeAnswer }}円<br>
                 <p>50*</p><input type="text" v-model="two">枚{{ twoAnswer }}円<br>
                 <p>10*</p><input type="text" v-model="one">枚{{ oneAnswer }}円<br>
-                <p>合計金額<span :class="totalColor(total)">{{ total }}円</span></p>
+                <p>{{ totalMessage }}<span :class="totalColor(total)">{{ total }}円</span></p>
             </main>
         </div>
     </div>
