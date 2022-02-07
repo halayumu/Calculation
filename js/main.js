@@ -3,6 +3,9 @@ new Vue({
 
     //----[htmlのテキスト情報]----//
     data: {
+        heading: "レジ金計算機",
+        totalMessage: "総合計",
+
         seven: "", //一万円
         six: "", //五千円
         five: "", //千円
