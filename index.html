@@ -16,14 +16,119 @@
                 <h1>{{ heading }}</h1>
             </header>
             <main>
-                <p>10000*</p><input id="txt" type="text" v-model="seven">枚{{ sevenAnswer }}円<br>
-                <p>5000*</p><input type="text" v-model="six">枚{{ sixAnswer }}円<br>
-                <p>1000*</p><input type="text" v-model="five">枚{{ fiveAnswer }}円<br>
-                <p>500*</p><input type="text" v-model="four">枚{{ fourAnswer }}円<br>
-                <p>100*</p><input type="text" v-model="three">枚{{ threeAnswer }}円<br>
-                <p>50*</p><input type="text" v-model="two">枚{{ twoAnswer }}円<br>
-                <p>10*</p><input type="text" v-model="one">枚{{ oneAnswer }}円<br>
-                <p>{{ totalMessage }}<span :class="totalColor(total)">{{ total }}円</span></p>
+                <table border="1">
+                    <tr>
+                        <th>額</th>
+                        <th>枚数</th>
+                        <th>合計</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>10000</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="seven">
+                                <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                            </select>
+                        </td>
+                        <td>
+                            <p>{{ sevenAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>5000</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="six">
+                        <option v-for="n in 100" v-bind:value="n">{{ n }}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p>{{ sixAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>1000</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="five">
+                        <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                    </select>
+                        </td>
+                        <td>
+                            <p>{{ fiveAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>500</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="four">
+                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                </select>
+                        </td>
+                        <td>
+                            <p>{{ fourAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>100</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="three">
+                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                </select>
+                        </td>
+                        <td>
+                            <p>{{ threeAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>50</p>
+                        </td>
+                        <td><select type="number" v-model="two">
+                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                </select>
+                        </td>
+                        <td>
+                            <p>{{ twoAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>10</p>
+                        </td>
+                        <td>
+                            <select type="number" v-model="one">
+                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                </select>
+                        </td>
+                        <td>
+                            <p>{{ oneAnswer }}円</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <p>{{ totalMessage }}<span :class="totalColor(total)">{{ total }}円</span></p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
             </main>
         </div>
     </div>
