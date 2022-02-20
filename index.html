@@ -29,7 +29,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="seven">
-                                <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}</option>               
                             </select>
                         </td>
                         <td>
@@ -43,7 +43,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="six">
-                        <option v-for="n in 100" v-bind:value="n">{{ n }}</option>
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}
                             </select>
                         </td>
                         <td>
@@ -57,7 +57,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="five">
-                        <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}       
                     </select>
                         </td>
                         <td>
@@ -71,7 +71,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="four">
-                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}              
                 </select>
                         </td>
                         <td>
@@ -85,7 +85,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="three">
-                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}               
                 </select>
                         </td>
                         <td>
@@ -98,7 +98,7 @@
                             <p>50</p>
                         </td>
                         <td><select type="number" v-model="two">
-                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                            <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}               
                 </select>
                         </td>
                         <td>
@@ -112,7 +112,7 @@
                         </td>
                         <td>
                             <select type="number" v-model="one">
-                    <option v-for="n in 100" v-bind:value="n">{{ n }}</option>               
+                                <option v-for="n in int" :key="n" v-bind:value="n">{{ n - 1 }}               
                 </select>
                         </td>
                         <td>
