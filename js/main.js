@@ -5,8 +5,11 @@ new Vue({
     data: {
         heading: "レジ金計算機",
         totalMessage: "総合計",
+        amountTh: "額",
+        numberTh: "枚数",
+        totalTh: "合計",
 
-        //----[枚数]----//
+        //----[枚数上限]----//
         int: 100,
 
         //----[金額一覧]----//
