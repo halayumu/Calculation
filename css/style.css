@@ -25,6 +25,12 @@
             color: red;
             font-size: 20px;
         }
+        option {
+            text-align: center;
+        }
+        select {
+            width: 100px;
+        }
         input {
             margin-bottom: 20px;
         }
@@ -61,9 +67,12 @@
             color: red;
             font-size: 30px;
         }
-        /* body {
+        option {
             text-align: center;
-        } */
+        }
+        select {
+            width: 100px;
+        }
         table {
             margin: 0 auto;
         }
