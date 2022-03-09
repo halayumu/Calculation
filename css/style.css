@@ -23,7 +23,7 @@
         }
         .red {
             color: red;
-            font-size: 20px;
+            /* font-size: 20px; */
         }
         option {
             text-align: center;
@@ -38,10 +38,17 @@
             margin: 0 auto;
         }
         th {
-            padding: 15px;
+            padding: 12px;
         }
         td {
-            padding: 15px;
+            padding: 12px;
+        }
+        td p {
+            width: 75px;
+            text-align: center;
+        }
+        .total-name {
+            text-align: center;
         }
     }
     
@@ -65,7 +72,7 @@
         }
         .red {
             color: red;
-            font-size: 30px;
+            font-size: 20px;
         }
         option {
             text-align: center;
@@ -81,5 +88,12 @@
         }
         input {
             margin-bottom: 20px;
+        }
+        td p {
+            width: 100px;
+            text-align: center;
+        }
+        .total-name {
+            text-align: center;
         }
     }
