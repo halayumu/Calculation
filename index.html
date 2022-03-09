@@ -135,10 +135,10 @@
                     </tr>
 
                     <tr>
-                        <td></td>
-                        <td>
+                        <td class="total-name">{{ totalMessage }}</td>
+                        <td class="total-name">
                             <!--総合計-->
-                            <p>{{ totalMessage }}<span :class="totalColor(total)">{{ total.toLocaleString() }}円</span></p>
+                            <p><span :class="totalColor(total)">{{ total.toLocaleString() }}円</span></p>
                         </td>
                         <td></td>
                     </tr>
