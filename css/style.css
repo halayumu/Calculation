@@ -73,6 +73,8 @@
         .red {
             color: red;
             font-size: 20px;
+            /* width: 140px; */
+            /* height: 20px; */
         }
         option {
             text-align: center;
@@ -90,8 +92,12 @@
             margin-bottom: 20px;
         }
         td p {
-            width: 100px;
+            width: 140px;
+            /* height: 10px; */
             text-align: center;
+        }
+        td {
+            height: 10px;
         }
         .total-name {
             text-align: center;
