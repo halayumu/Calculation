@@ -1,105 +1,137 @@
-    * {
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 560px) {
+    header h1 {
+        font-weight: normal;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #555;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .br {
+        display: flex;
+    }
+    .br::before {
+        content: "\A";
+        white-space: pre;
+    }
+    .red {
+        color: red;
+        /* font-size: 20px; */
+    }
+    option {
+        text-align: center;
+    }
+    select {
+        width: 100px;
+    }
+    input {
+        margin-bottom: 20px;
+    }
+    table {
+        margin: 0 auto;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+th {
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+}
+
+td p {
+    width: 75px;
+    text-align: center;
+}
+
+.total-name {
+    text-align: center;
+}
+
+
+/* table {
+            border: 1px solid;
+            border: redius 10px;
+            overflow: hidden;
+        }
+        td+td {
+            border-left: 1px solid;
+        }
+        tr+tr td {
+            border-top: 1px solid;
+        } */
+
+
+}
+@media screen and (min-width: 960px) {
+    header h1 {
+        font-weight: normal;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #555;
+        width: 30%;
+        margin: 0 auto;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
     }
     
-    @media screen and (max-width: 560px) {
-        header h1 {
-            font-weight: normal;
-            margin-bottom: 30px;
-            border-bottom: solid 2px #555;
-            width: 70%;
-            margin: 0 auto;
-            padding-top: 10px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .br {
-            display: flex;
-        }
-        .br::before {
-            content: "\A";
-            white-space: pre;
-        }
-        .red {
-            color: red;
-            /* font-size: 20px; */
-        }
-        option {
-            text-align: center;
-        }
-        select {
-            width: 100px;
-        }
-        input {
-            margin-bottom: 20px;
-        }
-        table {
-            margin: 0 auto;
-        }
-        th {
-            padding: 12px;
-        }
-        td {
-            padding: 12px;
-        }
-        td p {
-            width: 75px;
-            text-align: center;
-        }
-        .total-name {
-            text-align: center;
-        }
+    .br {
+        display: flex;
     }
     
-    @media screen and (min-width: 960px) {
-        header h1 {
-            font-weight: normal;
-            margin-bottom: 30px;
-            border-bottom: solid 2px #555;
-            width: 30%;
-            margin: 0 auto;
-            padding-top: 10px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .br {
-            display: flex;
-        }
-        .br::before {
-            content: "\A";
-            white-space: pre;
-        }
-        .red {
-            color: red;
-            /* font-size: 20px; */
-            /* width: 140px; */
-            /* height: 20px; */
-        }
-        option {
-            text-align: center;
-        }
-        select {
-            width: 100px;
-        }
-        table {
-            margin: 0 auto;
-        }
-        td {
-            padding: 30px;
-        }
-        input {
-            margin-bottom: 20px;
-        }
-        td p {
-            width: 140px;
-            /* height: 10px; */
-            text-align: center;
-        }
-        td {
-            height: 10px;
-        }
-        .total-name {
-            text-align: center;
-        }
+    .br::before {
+        content: "\A";
+        white-space: pre;
     }
+    
+    .red {
+        color: red;
+        /* font-size: 20px; */
+        /* width: 140px; */
+        /* height: 20px; */
+    }
+    
+    option {
+        text-align: center;
+    }
+    
+    select {
+        width: 100px;
+    }
+    
+    table {
+        margin: 0 auto;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    td {
+        padding: 30px;
+    }
+    
+    input {
+        margin-bottom: 20px;
+    }
+    
+    td p {
+        width: 140px;
+        /* height: 10px; */
+        text-align: center;
+    }
+    
+    td {
+        height: 10px;
+    }
+    
+    .total-name {
+        text-align: center;
+    }
+}
